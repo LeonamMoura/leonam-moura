@@ -1,0 +1,51 @@
+@import "../../styles/colors.scss";
+
+.container {
+  position: sticky;
+  top: 0;
+  background-color: $background;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 160px;
+
+  .logoWrapper {
+    width: 233px;
+    .tag {
+      font-size: 24px;
+      color: $primaryGreen;
+      font-weight: 700;
+    }
+
+    .name {
+      font-size: 24px;
+      color: $whiteText;
+      font-weight: 700;
+    }
+
+    .office {
+      font-size: 14px;
+      color: $whiteText;
+      font-weight: 500;
+    }
+  }
+
+  .menuList {
+    display: flex;
+    list-style: none;
+
+    .menuItem {
+      margin-left: 32px;
+      padding: 4px 0;
+      font-size: 14px;
+      color: $whiteText;
+      cursor: pointer;
+      transition: all ease-in-out 0.2s;
+
+      &:hover {
+        color: $primaryGreen;
+      }
+    }
+  }
+}
